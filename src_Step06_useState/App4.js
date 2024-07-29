@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 
-function App4(props) {
+function App4() {
     // boolean 값을 상태값으로 관리하기
     const [isShow, setShow] = useState(true)
 

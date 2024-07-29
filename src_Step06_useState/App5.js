@@ -29,7 +29,7 @@ function App5() {
             <ul>
                 {state.names.map(item => <li key={item.id}>{item.name}</li>)}
             </ul>
-            {JSON.stringify(state)}
+            <pre>{JSON.stringify(state, null, 2)}</pre>
         </div>
     );
 }
