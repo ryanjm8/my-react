@@ -1,6 +1,7 @@
 
 import { Component } from 'react';
 import './App.css'
+import { json } from 'react-router-dom';
 
 //클래스형 component
 class App3 extends Component{
@@ -18,7 +19,7 @@ class App3 extends Component{
         <form action="/v3/post" method="post" onSubmit={(e)=>{
             e.preventDefault();
             const url=e.target.action;
-            constformData= new FormData(e.target);
+            const formData= new FormData(e.target);
             const formObject={}
             FormData.forEach((value, key)=>{
                 formObject[key]=value;
