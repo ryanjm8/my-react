@@ -5,13 +5,15 @@ import Home from '../pages/Home'
 import { createBrowserRouter } from "react-router-dom"
 import Member0 from '../pages/Member0'
 import MemberForm from '../pages/MemberForm'
+import MemberUpdateForm from '../pages/MemberUpdateForm'
 
 
 //라우트 정보를 배열에 저장
 const routes=[
     {path:"/", element: <Home/>},
     {path:"/members", element: <Member0/> },
-    {path:"/members/new", element: <MemberForm/>}
+    {path:"/members/new", element: <MemberForm/>},
+    {path:"/members/:num/edit", element:<MemberUpdateForm/>}
 ]
 
 //BrouserRouter 를 만들기
